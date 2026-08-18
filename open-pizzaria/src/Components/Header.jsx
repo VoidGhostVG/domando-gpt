@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import "./Header.css"
+
 
 const Header = () => {
     return (
