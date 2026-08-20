@@ -1,4 +1,6 @@
-const Cards = () => {
+import "./Cards.css"
+
+const Cards = (props) => {
     return (
         <section>
             <article>

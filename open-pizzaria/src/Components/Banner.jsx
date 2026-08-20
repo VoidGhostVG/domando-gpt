@@ -1,6 +1,6 @@
 import "./Banner.css"
 
-const Banner = () => {
+const Banner = (props) => {
     return (
         <section className="banner">
         <img

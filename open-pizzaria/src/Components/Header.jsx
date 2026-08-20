@@ -2,14 +2,14 @@ import { Fragment } from "react";
 import "./Header.css"
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <>
-            <header>
-            <h1>🍕 Bem-vindo à OpenPizzaria!</h1>
-                <p>As melhores pizzas, feitas com carinho e ingredientes selecionados. Escolha seu sabor favorito e aproveite!</p>
+            <header className="header-pizzaria">
+                <h1>{props.titleHeader}</h1>
+                    <p>{props.textHeader}</p>
             </header>
-            <hr />
+            <hr className="divider" />
         </>
     )
 }

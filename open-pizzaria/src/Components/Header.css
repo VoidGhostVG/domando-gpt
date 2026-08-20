@@ -1,4 +1,4 @@
-.header {
+.header-pizzaria {
     background: linear-gradient(135deg, #b71c1c, #e65100);
     color: white;
     padding: 45px 25px;
@@ -20,14 +20,14 @@
     margin-bottom: 10px;
 }
 
-.header h1 {
+.header-pizzaria h1 {
     margin: 0;
     font-size: 38px;
     font-weight: bold;
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.header p {
+.header-pizzaria p {
     margin: 15px auto 0;
     font-size: 18px;
     line-height: 1.6;

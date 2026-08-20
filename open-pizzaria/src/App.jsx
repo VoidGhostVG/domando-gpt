@@ -1,26 +1,18 @@
 import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Cards from "./Components/Cards";
+import Footer from "./Components/Footer";
 import "./Global.css"
 function App() {
 
   return (
     <div className="container">
-      
-    <header className="header">
-    <div className="header-content">
-        <span className="pizza-icon">🍕</span>
 
-        <h1>Bem-vindo à OpenPizzaria!</h1>
+      <Header titleHeader="Bem-vindo à OpenPizzaria!"
+      textHeader="As melhores pizzas, feitas com carinho especial para você!">
+      </Header>
 
-        <p>
-            As melhores pizzas, feitas com carinho e ingredientes selecionados.
-            Escolha seu sabor favorito e aproveite!
-        </p>
-    </div>
-</header>
-
-<hr className="divider" />
+      <hr className="divider" />
 
 
       <Banner />
@@ -28,7 +20,7 @@ function App() {
 
       <Cards />
 
-
+      <Footer textFooter="Todos os direitos reservados - 2026" />
     </div>
 
   )
