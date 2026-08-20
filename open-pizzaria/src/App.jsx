@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Cards from "./Components/Cards";
 import Footer from "./Components/Footer";
+import Menu from "./Components/Menu";
 import "./Global.css"
 function App() {
 
@@ -14,11 +15,15 @@ function App() {
 
       <hr className="divider" />
 
+      <Menu />
 
       <Banner />
 
 
       <Cards />
+
+
+      <Menu />
 
       <Footer textFooter="Todos os direitos reservados - 2026" />
     </div>
