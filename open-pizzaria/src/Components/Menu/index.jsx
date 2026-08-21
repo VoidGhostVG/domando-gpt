@@ -1,6 +1,6 @@
 import "./Menu.css"
 
-const Menu = () => {
+const Menu = (props) => {
     return (
         <>
             <nav className="menu">

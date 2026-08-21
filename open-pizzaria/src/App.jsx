@@ -13,17 +13,18 @@ function App() {
       textHeader="As melhores pizzas, feitas com carinho especial para você!">
       </Header>
 
+
       <hr className="divider" />
 
+
       <Menu />
+
 
       <Banner />
 
 
       <Cards />
 
-
-      <Menu />
 
       <Footer textFooter="Todos os direitos reservados - 2026" />
     </div>
