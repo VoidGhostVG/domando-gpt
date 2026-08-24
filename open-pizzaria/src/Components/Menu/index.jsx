@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom"
 import "./Menu.css"
 
 const Menu = (props) => {
@@ -6,22 +8,22 @@ const Menu = (props) => {
             <nav className="menu">
                 <ul>
                     <li
-                    ><link to="/">Home</link>
+                    ><Link to="/">Home</Link>
                     </li>
 
 
                     <li>
-                        <link to="/sobre">Sobre</link>
+                        <Link to="/sobre">Sobre</Link>
                     </li>
 
 
-                    <li><a href="#">Cardápio</a></li>
+                    <li><Link to="/cardapio">Cardápio</Link></li>
 
 
                     <li>
                         <ul className="submenu">
                             <li>
-                                <a href="#">Fale Conosco</a>
+                                <Link to="/contato">Fale Conosco</Link>
                             </li>
                         </ul>
                     </li>
