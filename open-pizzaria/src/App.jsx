@@ -1,9 +1,6 @@
 import Header from "./Components/Header";
-import Menu from "./Components/Menu";
-import Banner from "./Components/Banner";
-import Cards from "./Components/Cards";
-import Feedbacks from "./Components/Feedbacks";
 import Footer from "./Components/Footer";
+import Router from "./Router";
 import "./Global.css"
 function App() {
 
@@ -11,23 +8,14 @@ function App() {
     <div className="container">
 
       <Header titleHeader="Bem-vindo à OpenPizzaria!"
-      textHeader="As melhores pizzas, feitas com carinho especial para você!">
+        textHeader="As melhores pizzas, feitas com carinho especial para você!">
       </Header>
 
 
       <hr className="divider" />
 
 
-      <Menu />
-
-
-      <Banner />
-
-
-      <Cards />
       
-
-      <Feedbacks />
 
 
       <Footer textFooter="Todos os direitos reservados - 2026" />

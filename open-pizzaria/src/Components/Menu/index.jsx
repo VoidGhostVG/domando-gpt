@@ -5,9 +5,19 @@ const Menu = (props) => {
         <>
             <nav className="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li
+                    ><link to="/">Home</link>
+                    </li>
+
+
+                    <li>
+                        <link to="/sobre">Sobre</link>
+                    </li>
+
+
                     <li><a href="#">Cardápio</a></li>
+
+
                     <li>
                         <ul className="submenu">
                             <li>

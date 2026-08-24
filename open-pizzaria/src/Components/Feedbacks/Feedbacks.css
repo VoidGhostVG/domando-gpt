@@ -39,7 +39,7 @@
 }
 
 /* PRIMEIRA imagem = avatar */
-.contentBack > img:first-child {
+.contentBack>img:first-child {
     width: 80px;
     height: 80px;
 
@@ -63,7 +63,7 @@
 }
 
 /* Estrela */
-.contentBack > img:not(:first-child) {
+.contentBack>img:not(:first-child) {
     width: 30px;
     height: 30px;
 
