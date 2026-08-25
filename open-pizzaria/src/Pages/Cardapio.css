@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+
+/* =========================================
+   CARDÁPIO
+========================================= */
+
+.pizza-cardapio {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f5ead7;
+  color: #2b1710;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.pizza-header {
+  width: 100%;
+
+  padding: 80px 20px;
+
+  background: #8b1414;
+
+  text-align: center;
+
+  color: white;
+}
+
+.pizza-header span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #ffc107;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+.pizza-header h1 {
+  display: block;
+
+  margin: 0 0 20px;
+
+  color: white;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 64px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  white-space: normal;
+}
+
+.pizza-header h1 b {
+  color: #ffc107;
+
+  font-weight: 700;
+}
+
+.pizza-header p {
+  display: block;
+
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  color: #f8dfc0;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  white-space: normal;
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.pizza-main {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 0;
+}
+
+
+/* =========================================
+   CATEGORIA
+========================================= */
+
+.pizza-categoria {
+  width: 100%;
+
+  margin-bottom: 70px;
+}
+
+.pizza-categoria h2 {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 30px;
+
+  padding-bottom: 12px;
+
+  border-bottom: 3px solid #d8bd91;
+
+  color: #8b1414;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 36px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  white-space: normal;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.pizza-grid {
+  display: grid !important;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+  grid-auto-flow: row;
+
+  gap: 25px;
+
+  width: 100%;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.pizza-card {
+  display: block;
+
+  width: 100%;
+
+  min-width: 0;
+
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 20px rgba(60, 30, 10, 0.12);
+
+  border: 1px solid #eadbc5;
+}
+
+.pizza-card::before {
+  content: "";
+
+  display: block;
+
+  width: 100%;
+
+  height: 6px;
+
+  background: #8b1414;
+}
+
+
+/* =========================================
+   CONTEÚDO CARD
+========================================= */
+
+.pizza-card-conteudo {
+  display: block;
+
+  width: 100%;
+
+  padding: 25px;
+}
+
+.pizza-card-conteudo h3 {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 12px;
+
+  color: #35150e;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  white-space: normal;
+}
+
+.pizza-card-conteudo p {
+  display: block;
+
+  width: 100%;
+
+  min-height: 50px;
+
+  margin: 0 0 25px;
+
+  color: #77665d;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  white-space: normal;
+
+  word-break: normal;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   PREÇO + BOTÃO
+========================================= */
+
+.pizza-card-footer {
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  gap: 15px;
+}
+
+.pizza-card-footer strong {
+  display: inline-block;
+
+  color: #a31717;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.pizza-card-footer button {
+  display: inline-block;
+
+  width: auto;
+
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #ffc107;
+
+  color: #4a2500;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+.pizza-card-footer button:hover {
+  background: #ffca2c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.pizza-footer {
+  width: 100%;
+
+  padding: 35px 20px;
+
+  background: #691010;
+
+  color: #f8dfc0;
+
+  font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .pizza-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+  .pizza-header {
+    padding: 60px 20px;
+  }
+
+  .pizza-header h1 {
+    font-size: 45px;
+  }
+
+  .pizza-header p {
+    font-size: 14px;
+  }
+
+  .pizza-main {
+    width: 92%;
+
+    padding: 50px 0;
+  }
+
+  .pizza-categoria h2 {
+    font-size: 29px;
+  }
+
+  .pizza-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 20px;
+  }
+
+  .pizza-card-conteudo {
+    padding: 22px;
+  }
+
+}

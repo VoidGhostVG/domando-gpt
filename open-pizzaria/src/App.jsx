@@ -15,6 +15,9 @@ function App() {
       <hr className="divider" />
 
 
+      <Router />
+
+
       
 
 

@@ -22,7 +22,7 @@ const FeedbackList = [
   },
   {
     id: 3,
-    nome: "Dan Gostoso",
+    nome: "Daniel Carvalho",
     imagem: Dan,
     nota: 5.0,
     comentario:
