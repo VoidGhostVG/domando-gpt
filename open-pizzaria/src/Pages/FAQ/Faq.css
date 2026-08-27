@@ -1,0 +1,307 @@
+/* ==============================
+   RESET
+============================== */
+
+.containerFaq {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(217, 4, 41, 0.08), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(255, 204, 0, 0.12), transparent 30%),
+    #fff8e9;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2118;
+}
+
+
+/* ==============================
+   TÍTULO
+============================== */
+
+.containerFaq h1 {
+  max-width: 1000px;
+
+  margin: 0 auto 15px;
+  padding: 35px 25px;
+
+  background: linear-gradient(
+    135deg,
+    #8f0018,
+    #d90429
+  );
+
+  color: #ffffff;
+
+  text-align: center;
+  font-size: 42px;
+  letter-spacing: 1px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(90, 0, 15, 0.25);
+}
+
+
+/* ==============================
+   BOTÃO VOLTAR
+============================== */
+
+.containerFaq > a {
+  display: block;
+
+  width: fit-content;
+
+  margin: 25px auto 45px;
+  padding: 13px 25px;
+
+  background: #d90429;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  border-radius: 9px;
+
+  box-shadow:
+    0 5px 15px rgba(80, 40, 0, 0.15);
+
+  transition:
+    all 0.3s ease;
+}
+
+.containerFaq > a:hover {
+  background: #d90429;
+  color: #ffffff;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 25px rgba(217, 4, 41, 0.3);
+}
+
+
+/* ==============================
+   CONTEÚDO
+============================== */
+
+.contentFaq {
+  width: min(1000px, 92%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap: 25px;
+}
+
+
+/* ==============================
+   CARD DE COMENTÁRIO
+============================== */
+
+.contentFaq article {
+  position: relative;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #eadfd2;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 7px 25px rgba(65, 35, 15, 0.09);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* barra lateral */
+
+.contentFaq article::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 5px;
+  height: 100%;
+
+  background: linear-gradient(
+    to bottom,
+    #d90429,
+    #ffcc00
+  );
+}
+
+
+/* efeito hover */
+
+.contentFaq article:hover {
+  transform: translateY(-7px);
+
+  border-color: #e3b8a0;
+
+  box-shadow:
+    0 15px 35px rgba(70, 25, 10, 0.16);
+}
+
+
+/* ==============================
+   NOME
+============================== */
+
+.contentFaq article strong:first-of-type {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #d90429;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+/* nome */
+
+.contentFaq article span:first-of-type {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #29221d;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+
+/* ==============================
+   EMAIL
+============================== */
+
+.contentFaq article strong:nth-of-type(2) {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #d90429;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+/* email */
+
+.contentFaq article span:nth-of-type(2) {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #8c8177;
+
+  font-size: 14px;
+}
+
+
+/* ==============================
+   MENSAGEM
+============================== */
+
+.contentFaq article strong:nth-of-type(3) {
+  display: block;
+
+  margin-bottom: 8px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #eee5db;
+
+  color: #d90429;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+/* mensagem */
+
+.contentFaq article span:nth-of-type(3) {
+  display: block;
+
+  padding: 16px;
+
+  background: #fff8ed;
+
+  border: 1px solid #f1e4d4;
+
+  border-radius: 10px;
+
+  color: #4b4037;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  word-break: break-word;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 650px) {
+
+  .containerFaq {
+    padding: 30px 15px;
+  }
+
+  .containerFaq h1 {
+    padding: 28px 20px;
+
+    font-size: 32px;
+  }
+
+  .contentFaq {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .contentFaq article {
+    padding: 23px;
+  }
+}

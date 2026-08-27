@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Menu from "./Components/Menu";
 import Cardapio from './Pages/Cardapio/Cardapio';
 import Users from './Pages/Users/Users';
+import Faq from './Pages/FAQ/Faq';
 
 export default function Router() {
     return (
@@ -15,6 +16,7 @@ export default function Router() {
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/cardapio" element={<Cardapio />} />
                 <Route path="/users" element={<Users />} />
+                <Route path="/faq" element={<Faq />} />
             </Routes>
         </BrowserRouter>
     )

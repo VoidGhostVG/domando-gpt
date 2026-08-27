@@ -283,15 +283,15 @@ body {
 }
 
 .pizza-grid .pizza-card:nth-child(4)::before {
-  background-image: url("/images/portuguesa.jpg");
+  background-image: url("./src/assets/Portuguesa.jpg");
 }
 
 .pizza-grid .pizza-card:nth-child(5)::before {
-  background-image: url("/images/quatro-queijos.jpg");
+  background-image: url("./src/assets/Quatro-Queijos.jpg");
 }
 
 .pizza-grid .pizza-card:nth-child(6)::before {
-  background-image: url("/images/toscana.jpg");
+  background-image: url("./src/assets/Toscana.jpg");
 }
 
 
@@ -454,11 +454,11 @@ body {
 ========================================================= */
 
 .pizza-categoria:nth-child(2) .pizza-card:nth-child(1)::before {
-  background-image: url("/images/chocolate.jpg");
+  background-image: url("./src/assets/Chocolate.jpg");
 }
 
 .pizza-categoria:nth-child(2) .pizza-card:nth-child(2)::before {
-  background-image: url("/images/banana.jpg");
+  background-image: url("./src/assets/Banana.jpg");
 }
 
 
@@ -467,15 +467,15 @@ body {
 ========================================================= */
 
 .pizza-categoria:nth-child(3) .pizza-card:nth-child(1)::before {
-  background-image: url("/images/refrigerante.jpg");
+  background-image: url("./src/assets/Refrigerante.jpg");
 }
 
 .pizza-categoria:nth-child(3) .pizza-card:nth-child(2)::before {
-  background-image: url("/images/suco.jpg");
+  background-image: url("./src/assets/Sucos.jpg");
 }
 
 .pizza-categoria:nth-child(3) .pizza-card:nth-child(3)::before {
-  background-image: url("/images/agua.jpg");
+  background-image: url("./src/assets/Agua.jpg");
 }
 
 

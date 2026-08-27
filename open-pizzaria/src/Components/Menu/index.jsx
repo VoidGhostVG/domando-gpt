@@ -28,7 +28,9 @@ const Menu = (props) => {
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">FAQ</a></li>
+                    <li>
+                        <Link to="/faq">FAQ</Link>
+                    </li>
                 </ul>
             </nav>
         </>
