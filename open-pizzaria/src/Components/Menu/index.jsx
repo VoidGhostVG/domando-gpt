@@ -11,15 +11,16 @@ const Menu = (props) => {
                     ><Link to="/">Home</Link>
                     </li>
 
-
                     <li>
                         <Link to="/sobre">Sobre</Link>
                     </li>
 
+                    <li>
+                        <Link to="/users">Usuários</Link>
+                    </li>
 
-                    <li><Link to="/cardapio">Cardápio</Link></li>
-
-
+                    <li>
+                        <Link to="/cardapio">Cardápio</Link></li>
                     <li>
                         <ul className="submenu">
                             <li>

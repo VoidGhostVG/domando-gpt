@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background: #fff7e6;
+  color: #2b2118;
+}
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+========================================================= */
+
+.pizza-cardapio {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(255, 193, 7, 0.12),
+      transparent 30%
+    ),
+    #fff7e6;
+}
+
+
+/* =========================================================
+   HEADER / HERO
+========================================================= */
+
+.pizza-header {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 430px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 70px 20px;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      rgba(80, 8, 10, 0.82),
+      rgba(150, 12, 20, 0.9)
+    ),
+    url("/images/margherita.jpg") center / cover;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* detalhe decorativo */
+
+.pizza-header::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  border: 2px solid rgba(255, 204, 0, 0.25);
+
+  border-radius: 50%;
+
+  top: -180px;
+  right: -100px;
+}
+
+.pizza-header::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  border: 2px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+
+  bottom: -130px;
+  left: -80px;
+}
+
+
+/* pequeno texto */
+
+.pizza-header span {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 15px;
+
+  color: #ffd000;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+
+/* título */
+
+.pizza-header h1 {
+  position: relative;
+  z-index: 2;
+
+  font-size: clamp(42px, 7vw, 76px);
+
+  line-height: 1;
+
+  margin-bottom: 20px;
+
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+}
+
+.pizza-header h1 b {
+  color: #ffd000;
+}
+
+
+/* descrição */
+
+.pizza-header p {
+  position: relative;
+  z-index: 2;
+
+  max-width: 650px;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #fff5e6;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.pizza-main {
+  width: min(1200px, 92%);
+
+  margin: 0 auto;
+
+  padding: 80px 0;
+}
+
+
+/* =========================================================
+   CATEGORIA
+========================================================= */
+
+.pizza-categoria {
+  margin-bottom: 80px;
+}
+
+
+/* título da categoria */
+
+.pizza-categoria h2 {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 35px;
+
+  font-size: 32px;
+
+  color: #9d0717;
+}
+
+
+/* linha decorativa */
+
+.pizza-categoria h2::after {
+  content: "";
+
+  flex: 1;
+
+  height: 2px;
+
+  background: linear-gradient(
+    to right,
+    #d90429,
+    transparent
+  );
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.pizza-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+
+  gap: 28px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.pizza-card {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 410px;
+
+  display: flex;
+  align-items: flex-end;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 25px rgba(75, 35, 15, 0.12);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   IMAGENS
+========================================================= */
+
+.pizza-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background-position: center;
+  background-size: cover;
+
+  transition: transform 0.6s ease;
+}
+
+
+/* Imagens das pizzas salgadas */
+
+.pizza-grid .pizza-card:nth-child(1)::before {
+  background-image: url("./src/assets/Marguerita.jpg");
+}
+
+.pizza-grid .pizza-card:nth-child(2)::before {
+  background-image: url("./src/assets/Calabresa.jpg");
+}
+
+.pizza-grid .pizza-card:nth-child(3)::before {
+  background-image: url("./src/assets/Frango.jpg");
+}
+
+.pizza-grid .pizza-card:nth-child(4)::before {
+  background-image: url("/images/portuguesa.jpg");
+}
+
+.pizza-grid .pizza-card:nth-child(5)::before {
+  background-image: url("/images/quatro-queijos.jpg");
+}
+
+.pizza-grid .pizza-card:nth-child(6)::before {
+  background-image: url("/images/toscana.jpg");
+}
+
+
+/* =========================================================
+   EFEITO ESCURO SOBRE IMAGEM
+========================================================= */
+
+.pizza-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(20, 10, 5, 0.95) 0%,
+      rgba(20, 10, 5, 0.75) 40%,
+      rgba(20, 10, 5, 0.05) 75%
+    );
+}
+
+
+/* =========================================================
+   HOVER DO CARD
+========================================================= */
+
+.pizza-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(80, 20, 10, 0.25);
+}
+
+.pizza-card:hover::before {
+  transform: scale(1.1);
+}
+
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+.pizza-card-conteudo {
+  width: 100%;
+
+  padding: 28px;
+
+  color: white;
+}
+
+
+/* nome */
+
+.pizza-card-conteudo h3 {
+  margin-bottom: 10px;
+
+  font-size: 25px;
+
+  color: #ffffff;
+}
+
+
+/* descrição */
+
+.pizza-card-conteudo p {
+  margin-bottom: 25px;
+
+  color: #f5eee7;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER DO CARD
+========================================================= */
+
+.pizza-card-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+
+/* preço */
+
+.pizza-card-footer strong {
+  font-size: 22px;
+
+  color: #ffd000;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   BOTÃO PEDIR
+========================================================= */
+
+.pizza-card-footer button {
+  border: none;
+
+  padding: 11px 20px;
+
+  border-radius: 8px;
+
+  background: #d90429;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 15px rgba(217, 4, 41, 0.3);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* hover */
+
+.pizza-card-footer button:hover {
+  background: #ffcc00;
+
+  color: #2b2118;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(255, 204, 0, 0.35);
+}
+
+
+/* clique */
+
+.pizza-card-footer button:active {
+  transform: translateY(0) scale(0.96);
+}
+
+
+/* =========================================================
+   PIZZAS DOCES
+========================================================= */
+
+.pizza-categoria:nth-child(2) .pizza-card:nth-child(1)::before {
+  background-image: url("/images/chocolate.jpg");
+}
+
+.pizza-categoria:nth-child(2) .pizza-card:nth-child(2)::before {
+  background-image: url("/images/banana.jpg");
+}
+
+
+/* =========================================================
+   BEBIDAS
+========================================================= */
+
+.pizza-categoria:nth-child(3) .pizza-card:nth-child(1)::before {
+  background-image: url("/images/refrigerante.jpg");
+}
+
+.pizza-categoria:nth-child(3) .pizza-card:nth-child(2)::before {
+  background-image: url("/images/suco.jpg");
+}
+
+.pizza-categoria:nth-child(3) .pizza-card:nth-child(3)::before {
+  background-image: url("/images/agua.jpg");
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pizza-footer {
+  padding: 35px 20px;
+
+  background: #2a0b0d;
+
+  color: #d9cfc5;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  border-top: 4px solid #d90429;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .pizza-header {
+    min-height: 380px;
+
+    padding: 60px 20px;
+  }
+
+  .pizza-header h1 {
+    font-size: 45px;
+  }
+
+  .pizza-header p {
+    font-size: 15px;
+  }
+
+  .pizza-main {
+    padding: 55px 0;
+  }
+
+  .pizza-categoria {
+    margin-bottom: 60px;
+  }
+
+  .pizza-categoria h2 {
+    font-size: 26px;
+  }
+
+  .pizza-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pizza-card {
+    min-height: 390px;
+  }
+
+  .pizza-card-conteudo {
+    padding: 23px;
+  }
+}

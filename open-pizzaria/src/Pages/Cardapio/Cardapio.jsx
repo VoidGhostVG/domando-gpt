@@ -139,7 +139,7 @@ export default function Cardapio() {
       </main>
 
       <footer className="pizza-footer">
-        © 2026 — Sua Pizzaria
+        © 2026 — OpenPizzaria
       </footer>
 
     </div>
