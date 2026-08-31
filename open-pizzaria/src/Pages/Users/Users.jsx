@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Users.css'
 
+
 export default function Users() {
   const [usuarios, setUsuarios] = useState([])
 
@@ -13,7 +14,6 @@ export default function Users() {
   }, [])
 
   console.log(usuarios)
-
   return (
     <main className="containerUsers">
       <h1>Lista de Usuários</h1>

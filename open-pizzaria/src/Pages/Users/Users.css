@@ -1,13 +1,13 @@
-/* Fundo da página */
 .containerUsers {
   min-height: 100vh;
   padding: 50px 20px;
   background: #fff4d6;
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
+  box-sizing: border-box;
 }
 
-/* Título */
+/* TÍTULO */
 .containerUsers h1 {
   max-width: 900px;
   margin: 0 auto 25px;
@@ -20,13 +20,15 @@
   font-size: 32px;
 
   border-radius: 15px;
+
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Link para voltar */
+/* BOTÃO VOLTAR */
 .containerUsers > a {
   display: block;
   width: fit-content;
+
   margin: 0 auto 35px;
   padding: 12px 25px;
 
@@ -37,32 +39,37 @@
   font-weight: bold;
 
   border-radius: 8px;
-  transition: all 0.3s ease;
+
+  transition: 0.3s;
 }
 
-/* Efeito ao passar o mouse */
 .containerUsers > a:hover {
-  background: #d90429;
-  color: white;
-
   transform: scale(1.05);
+
   box-shadow: 0 5px 12px rgba(217, 4, 41, 0.4);
 }
 
-/* Área dos usuários */
+/* ÁREA DOS USUÁRIOS */
 .contentUsers {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
+
+  display: grid;
+
+  /* 2 USUÁRIOS POR LINHA */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
 }
 
+/* CARD DE CADA USUÁRIO */
 .contentUsers article {
-  position: relative;
-
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
 
-  padding: 25px 30px;
+  gap: 5px;
+
+  padding: 25px;
 
   background: #ffffff;
 
@@ -73,37 +80,14 @@
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
-  transition: all 0.3s ease;
+  box-sizing: border-box;
+
+  min-width: 0;
+
+  transition: 0.3s;
 }
 
-/* Efeito ao passar o mouse */
-.contentUsers article:hover {
-  transform: translateY(-5px);
-
-  border-left-color: #ffcc00;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Textos "Nome:" e "Telefone:" */
-.contentUsers article strong {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-
-  color: #d90429;
-}
-
-/* Informações */
-.contentUsers article span {
-  font-size: 17px;
-  font-weight: 500;
-
-  color: #333;
-
-  margin-right: 25px;
-}
-
+/* ÍCONE */
 .contentUsers article::before {
   content: "👤";
 
@@ -114,12 +98,75 @@
   width: 50px;
   height: 50px;
 
-  flex-shrink: 0;
+  margin-bottom: 10px;
 
   background: #fff1f2;
-  color: #d90429;
 
   border-radius: 50%;
 
   font-size: 22px;
+}
+
+/* "NOME:", "EMAIL:", "TELEFONE:" */
+.contentUsers article strong {
+  display: block;
+
+  color: #d90429;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.8px;
+
+  margin-top: 5px;
+}
+
+/* DADOS DO USUÁRIO */
+.contentUsers article span {
+  display: block;
+
+  color: #333;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  margin-bottom: 8px;
+
+  /* Impede textos grandes de estourarem o card */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* EFEITO DO CARD */
+.contentUsers article:hover {
+  transform: translateY(-5px);
+
+  border-left-color: #ffcc00;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* TABLET / CELULAR */
+@media (max-width: 700px) {
+  .contentUsers {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 450px) {
+  .containerUsers {
+    padding: 30px 15px;
+  }
+
+  .containerUsers h1 {
+    font-size: 26px;
+    padding: 20px;
+  }
+
+  .contentUsers article {
+    padding: 20px;
+  }
 }
